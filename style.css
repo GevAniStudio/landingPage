@@ -1,0 +1,185 @@
+/* Google Fonts Link (Anta, Poppins) */
+
+/* font-family: "Anta", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Setting body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.301)),
+                    url('./img/star.jpg');
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.lang_btn-ru {
+  position: absolute;
+  top:25px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+  font-size: 15px;
+}
+.lang_btn-en {
+  position: absolute;
+  top:25px;
+  right: 95px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+  font-size: 15px;
+}
+.lang_btn img {
+  padding: 2px;
+  background-color: #ffffffed;
+  border-radius: 50%;
+  margin: 5px;
+  width: 25px;
+  padding: 2px;
+}
+
+.header_wrapper {
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 77%;
+}
+
+.menu_header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  text-align: center;
+  letter-spacing: .1em;
+  display: block;
+  margin: 50px 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.275);
+  border-radius: 30px;
+}
+
+.about h1 {
+  font-family: "Anta", sans-serif;
+  font-size: 32px;
+}
+.about_name {
+  font-size: 34px;
+  color: #edd20c;
+}
+
+.about__h1 {
+  font-size: 45px;
+  letter-spacing: .1em;
+  color: rgb(97, 181, 181);
+}
+
+.menu_header-nav li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
+}
+.menu_header-nav li:first-child {
+  margin-left: 0;
+}
+
+.menu_header-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+  font-size: 15px;
+  padding-right: 8px;
+}
+.menu_header-nav a:hover {
+  transform: scale(1.07);
+  background-color: #ffffff0a;
+  border-radius: 30px;
+}
+
+.header_icon {
+  background-color: #ffffffed;
+  border-radius: 50%;
+  margin: 7px;
+  width: 25px;
+  padding: 2px;
+}
+
+
+@media screen and (max-width: 993px) {
+  .header_wrapper {
+    max-width: 90%;
+  }
+
+  .menu_header-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: wrap;
+  }
+  .menu_header-nav li {
+    width: 46%;
+    margin: 0;
+  }
+  
+  .about h1 {
+    font-family: "Anta", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .about_name {
+    font-size: 26px;
+    color: #edd20c;
+  }
+  .about__h1 {
+    font-size: 26px;
+  }
+
+  .about {
+    text-align: center;
+    display: block;
+    margin: 35px 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.446);
+    border-radius: 30px;
+  }
+
+  .lang_btn-ru {
+    position: absolute;
+    top:15px;
+    right: 30px;
+    font-size: 14px;
+  }
+  .lang_btn-en {
+    top:15px;
+    right: 100px;
+    font-size: 14px;
+  }
+  .lang_btn img {
+    width: 20px;
+  }
+}
